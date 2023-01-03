@@ -109,7 +109,7 @@ func (l *LinkedList) DeleteAt(pos int) error {
 	}
 	if l.len == 0 {
 		fmt.Println("No nodes in list")
-		return errors.New("No nodes in list")
+		return errors.New("no nodes in list")
 	}
 	prevNode := l.GetAt(pos - 1)
 	if prevNode == nil {
@@ -126,7 +126,7 @@ func (l *LinkedList) DeleteVal(val int) error {
 	ptr := l.head
 	if l.len == 0 {
 		fmt.Println("List is empty")
-		return errors.New("List is empty")
+		return errors.New("list is empty")
 	}
 	for i := 0; i < l.len; i++ {
 		if ptr.value == val {
@@ -142,5 +142,5 @@ func (l *LinkedList) DeleteVal(val int) error {
 		ptr = ptr.next
 	}
 	fmt.Println("Node not found")
-	return errors.New("Node not found")
+	return errors.New("node not found")
 }
