@@ -1,4 +1,4 @@
-package list_manager
+package listmanager
 
 import (
 	"errors"
